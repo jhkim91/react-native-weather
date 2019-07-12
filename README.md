@@ -20,5 +20,5 @@ expo 에서 지원하는 아이콘
 
 사용방법
 * import { Ionicons } from '@expo/vector-icons';
-* <Ionicons color='white' size={144} name='ios-rainy' />
+* < Ionicons color='white' size={144} name='ios-rainy' />
 * name에 위 사이트 아이콘 이름 작성
