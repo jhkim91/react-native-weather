@@ -22,3 +22,8 @@ expo 에서 지원하는 아이콘
 * import { Ionicons } from '@expo/vector-icons';
 * < Ionicons color='white' size={144} name='ios-rainy' />
 * name에 위 사이트 아이콘 이름 작성
+
+날씨 조회 api (가입해야됨)
+* 주소 : https://openweathermap.org/api
+* 사용 url : `http://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&APPID=${API_KEY}`
+
