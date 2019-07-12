@@ -39,11 +39,11 @@ export default class App extends Component {
   }
 
   render() {
-    const { isLoaded, error } = this.state
+    const { isLoaded, error, teamperature, name } = this.state
     return (
       <View style={styles.container}>
         <StatusBar hidden={true} /* barStyle="dark-content" */ />
-        {isLoaded ? <Weather /> : (
+        {isLoaded ? <Weather weatherName={name} temp={Math.floor(teamperature - 273.15)} /> : (
           <View style={styles.loading}>
             <Text style={styles.loadingText}>Getting the fucking weather</Text>
             {error ? <Text style={styles.errorText}>{error}</Text> : null}
