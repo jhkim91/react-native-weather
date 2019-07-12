@@ -4,7 +4,21 @@ import Weather from './weather.js';
 
 export default class App extends Component {
   state = {
-    isLoaded: true
+    isLoaded: false
+  }
+
+  componentDidMount() {
+    navigator.geolocation.getCurrentPosition(
+      position => {
+        console.log(position);
+        this.setState({
+          isLoaded: true
+        })
+      },
+      error => {
+        console.log(error)
+      }
+    )
   }
 
   render() {
